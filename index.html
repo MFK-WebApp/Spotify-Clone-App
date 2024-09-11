@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="/CSS/utility.css" />
+  <title>Music player</title>
+</head>
+
+<body>
+  <div class="container flex bg-black">
+    <div class="left border">
+      <div class="home bg-grey rounded m-1 p-1">
+        <div class="close invert">
+          <img class="closeimg" src="/SVG/cross.svg" alt="close button" />
+        </div>
+        <div>
+          <img class="invert" src="/SVG/logo.svg" alt="logo" /></li>
+        </div>
+        <ul>
+          <li><img class="invert" src="/SVG/home.svg" alt="home" />Home</li>
+          <li><img class="invert" src="/SVG/search.svg" alt="search" />Search</li>
+        </ul>
+      </div>
+
+      <div class="library bg-grey rounded m-1 p-1">
+        <div class="Lheading">
+          <ul>
+            <li><img class="invert" src="/SVG/library.svg" alt="library" />
+              <h2>Your library</h2>
+            </li>
+          </ul>
+        </div>
+        <div class="songList">
+          <ul>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="right border">
+      <div class="heading bg-grey rounded">
+        <div class="hamburgerdiv invert flex">
+          <img class="hamburger" src="/SVG/hamburger.svg" alt="menu-01" />
+          <div class="arrowplayer">
+            <ul>
+              <li>
+                <img class="leftarrow" src="/SVG/leftarrow.svg" alt="leftarrow">
+                <img class="rightarrow" src="/SVG/rightarrow.svg" alt="rightarrow">
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="button">
+          <button class="Signup">Sign up</button>
+          <button class="Login">Log in</button>
+        </div>
+      </div>
+      <div class="spotifyPlaylists">
+        <h1>Spotify Playlists </h1>
+        <div class="cardContainer">
+          <!-- Card 1 -->
+          <div data-folder="ncs" class="card">
+            <div class="play">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <img src="/songs/ncs/cover.jpg" alt="">
+            <h2>Sleep Songs</h2>
+            <p>Take you to the heaven</p>
+          </div>
+          <!-- Card 2 -->
+          <div data-folder="cs" class="card">
+            <div class="play">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <img src="/songs/cs/cover.jpg" alt="">
+            <h2>Lofi Songs</h2>
+            <p>Songs for you</p>
+
+          </div> <!-- Card 3 -->
+          <div data-folder="Bright_(mood)" class="card">
+            <div class="play">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <img src="/songs/Bright_(mood)/cover.jpg" alt="">
+            <h2>Bright Songss</h2>
+            <p>Bright Songs for you</p>
+
+          </div><!-- Card 4 -->
+          <div data-folder="Chill_(mood)" class="card">
+            <div class="play">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <img src="/songs/Chill_(mood)/cover.jpg" alt="">
+            <h2>Just Chill</h2>
+            <p>Yes, Just Chill</p>
+
+          </div><!-- Card 5 -->
+          <div data-folder="Diljit" class="card">
+            <div class="play">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <img src="/songs/Diljit/cover.jpg" alt="">
+            <h2>Diljit Dosanjh</h2>
+            <p>Diljit Dosanjh hits</p>
+
+          </div><!-- Card 6 -->
+          <div data-folder="Funky_(mood)" class="card">
+            <div class="play">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <img src="/songs/Funky_(mood)/cover.jpg" alt="">
+            <h2>Go Funky</h2>
+            <p>Lets go Funky</p>
+
+          </div><!-- Card 7 -->
+          <div data-folder="Love_(mood)" class="card">
+            <div class="play">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <img src="/songs/Love_(mood)/cover.jpg" alt="">
+            <h2>I Love You</h2>
+            <p>Love is in the air</p>
+          </div>
+          <!-- Card 8 -->
+          <div data-folder="Uplifting_(mood)" class="card">
+            <div class="play">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </div>
+
+            <img src="/songs/Uplifting_(mood)/cover.jpg" alt="">
+            <h2>Get up</h2>
+            <p>You can do it!</p>
+          </div>
+        </div>
+        <div class="playbar">
+          <div class="seekbar invert">
+            <div class="circle">
+
+            </div>
+          </div>
+          <div class="abovebar">
+            <div class="playmusic">
+              <img class="rotatemusic invert" src="/SVG/playmusic.svg" alt="playmusic">
+              <div class="songinfo">
+
+              </div>
+            </div>
+            <div class="songbuttons">
+              <img id="previous" src="/SVG/previousbtn.svg" alt="previousbtn">
+              <img id="play" src="/SVG/play.svg" alt="playbtn">
+              <img id="next" src="/SVG/nextbtn.svg" alt="nextbtn">
+            </div>
+            <div class="voltime">
+              <div class="songtime">
+
+              </div>
+              <div class="bothranvol">
+
+                <div class="volume">
+                  <img class="volume invert" src="/SVG/volume.svg" alt="volume">
+                </div>
+                <div class="range">
+                  <input type="range" name="volume" id="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/Script/script.js"></script>
+</body>
+
+</html>
